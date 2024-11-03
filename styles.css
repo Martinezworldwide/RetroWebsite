@@ -1,0 +1,47 @@
+/* Body Styling */
+body {
+  background-color: #FFCC99; /* Classic peachy background */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Flashing Title */
+.title-flash {
+  font-size: 2.5em;
+  color: #FF0000;
+  animation: flash 1s infinite alternate;
+}
+
+/* Marquee Text */
+.marquee {
+  font-size: 1.5em;
+  color: #0000FF;
+  background-color: #FFFF00;
+  padding: 5px;
+}
+
+/* Blinking Text */
+.blink {
+  color: #00FF00;
+  font-size: 2em;
+  animation: blink 0.8s steps(2, start) infinite;
+}
+
+/* GIFs Styling */
+.gif {
+  width: 150px;
+  margin: 20px;
+  border: 5px solid #000;
+}
+
+/* Keyframes for Flashing Effect */
+@keyframes flash {
+  from { color: #FF0000; }
+  to { color: #0000FF; }
+}
+
+/* Keyframes for Blinking Effect */
+@keyframes blink {
+  50% { opacity: 0; }
+}
